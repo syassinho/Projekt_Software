@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPF_The_Checkbox_12.Projekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_The_Checkbox_12.Projekt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <StackPanel >
+ 
+        <Label Foreground="red" >Bunzername:</Label>
+        <TextBox x:Name="text_name" Height="31"/>
+        <Label Foreground="red">Password:</Label>
+        <PasswordBox x:Name="text_password" Height="31" />
+        <Label Foreground="red">Sie sind:</Label>
+        <RadioButton Foreground="red" x:Name="Weiblich" GroupName="sex">Weiblich</RadioButton>
+        <RadioButton  Foreground="red" x:Name="Männlich" GroupName="sex">Männlich</RadioButton>
+
+        <CheckBox Checked="CheckBox_Checked"  Unchecked="CheckBox_Unchecked" Margin="10" HorizontalAlignment="Center" Height="19" >Ich aktzeptiere die AGB</CheckBox>
+        <Button x:Name="btn_register" IsEnabled="False" Click="btn_register_Click" Content="Registrieren" Height="32"/>
+        <Label x:Name="lbl_anzeige"/>
+    </StackPanel>
+    <Window.Background>
+        <ImageBrush ImageSource="c:\users\syassinho\source\repos\pppp\besser Bachground.jpg " />
+    </Window.Background>
+</Window>
+
